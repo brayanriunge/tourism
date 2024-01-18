@@ -1,6 +1,9 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { HiMenu } from "react-icons/hi";
+import Logo from "@/public/Logo.jpeg";
 
 export default function Navbar() {
   const flexBetween = "flex items-center justify-between";
@@ -11,7 +14,9 @@ export default function Navbar() {
       <div className={`${flexBetween} mx-auto w-full`}>
         <div className={`${flexBetween} w-full gap-10`}>
           {/**logo */}
-
+          <Link href="/ ">
+            <Image src={Logo} height={24} width={24} alt="logo" />
+          </Link>
           {/**on the left */}
           {isAboveMediumScreen ? (
             <div></div>

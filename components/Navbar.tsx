@@ -14,7 +14,7 @@ export default function Navbar() {
       className={`${flexBetween} fixed z-30 top-0 shadow bg-blue-200 py-4  w-full`}
     >
       <div className={`${flexBetween} mx-auto w-5/6`}>
-        <div className={`${flexBetween} w-full gap-10`}>
+        <div className={`${flexBetween} w-full gap-4`}>
           {/**logo */}
           <Link href="/ ">
             <Image
@@ -27,7 +27,7 @@ export default function Navbar() {
           </Link>
           {/**on the left */}
           {isAboveMediumScreen ? (
-            <div>
+            <div className="flex gap-4 items-center justify-between">
               <Link href={"/"}>
                 <p>Home</p>
               </Link>

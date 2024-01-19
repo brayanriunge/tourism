@@ -14,7 +14,7 @@ export default function Navbar() {
       className={`${flexBetween} fixed z-30 top-0 shadow bg-blue-200 py-4  w-full`}
     >
       <div className={`${flexBetween} mx-auto w-5/6`}>
-        <div className={`${flexBetween} w-full gap-4`}>
+        <div className={`${flexBetween} w-full text-gray-700  gap-8`}>
           {/**logo */}
           <Link href="/ ">
             <Image
@@ -25,21 +25,24 @@ export default function Navbar() {
               alt="logo"
             />
           </Link>
+          <h2 className="text-3xl font-bold ">African Travels</h2>
           {/**on the left */}
           {isAboveMediumScreen ? (
-            <div className="flex gap-4 items-center justify-between">
-              <Link href={"/"}>
-                <p>Home</p>
-              </Link>
-              <Link href={"/"}>
-                <p>Our team</p>
-              </Link>
-              <Link href={"/"}>
-                <p>Contact Us</p>
-              </Link>
-              <Link href={"/"}>
-                <p>About Us</p>
-              </Link>
+            <div className="flex  items-center justify-between">
+              <div className={`${flexBetween} gap-4 `}>
+                <Link href={"/"}>
+                  <p>Home</p>
+                </Link>
+                <Link href={"/"}>
+                  <p>Our team</p>
+                </Link>
+                <Link href={"/"}>
+                  <p>Contact Us</p>
+                </Link>
+                <Link href={"/"}>
+                  <p>About Us</p>
+                </Link>
+              </div>
             </div>
           ) : (
             <button

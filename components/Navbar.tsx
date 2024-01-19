@@ -7,10 +7,12 @@ import Logo from "@/public/Logo.jpeg";
 
 export default function Navbar() {
   const flexBetween = "flex items-center justify-between";
-  const isAboveMediumScreen = useMediaQuery("min-h-width: 720px");
+  const isAboveMediumScreen = useMediaQuery("min-h-width: 1060px");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   return (
-    <div className={`${flexBetween} fixed z-30 top-0 shadow bg-gray-800 py-6 `}>
+    <div
+      className={`${flexBetween} fixed z-30 top-0 shadow bg-gray-800 py-6  w-full`}
+    >
       <div className={`${flexBetween} mx-auto w-full`}>
         <div className={`${flexBetween} w-full gap-10`}>
           {/**logo */}
@@ -19,7 +21,9 @@ export default function Navbar() {
           </Link>
           {/**on the left */}
           {isAboveMediumScreen ? (
-            <div></div>
+            <div>
+              <Link href={"/"}> home</Link>
+            </div>
           ) : (
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <HiMenu className="h-6 w-6" />

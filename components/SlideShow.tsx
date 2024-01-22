@@ -13,7 +13,7 @@ export default function SlideShow({ slides }: SlideShowProps) {
     return () => clearInterval(interval);
   }, [slides]);
   return (
-    <div className="max-w-2xl mx-auto relative">
+    <div className="min-w-xl mx-auto w-full mt-28 relative">
       {slides.map((slide, index) => (
         <div
           key={index}

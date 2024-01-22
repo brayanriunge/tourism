@@ -52,9 +52,9 @@ export default function Navbar() {
               <HiMenu className="h-6 w-6" />
             </button>
           )}
-          {/**nobile view */}
+          {/**mobile view */}
           {isAboveMediumScreen && isMenuToggled && (
-            <div className="fixed right-0 bottom-0 h-ful w-[333px] bg-blue-200">
+            <div className="fixed right-0 bottom-0 h-full w-[300px] drop-shadow-xl z-40 p-5 bg-blue-200">
               <div className="flex p-4 justify-end">
                 <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
                   <HiOutlineX className="h-6 w-6" />

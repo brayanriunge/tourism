@@ -13,9 +13,15 @@ export default function SlideShow({ slides }: SlideShowProps) {
     return () => clearInterval(interval);
   }, [slides]);
   return (
-    <div>
+    <div className="max-w-2xl mx-auto relative">
       {slides.map((slide, index) => (
-        <div key={index}></div>
+        <div
+          key={index}
+          className={`slide absolute h-60 w-full bg-cover bg-center ${
+            index === currentSlide ? "opacity-100" : "opacity-0"
+          } transition-opacity duration-100`}
+          style={{ background: `url(${slide})` }}
+        />
       ))}
     </div>
   );

@@ -12,5 +12,11 @@ export default function SlideShow({ slides }: SlideShowProps) {
     }, 2000);
     return () => clearInterval(interval);
   }, [slides]);
-  return <div>slides</div>;
+  return (
+    <div>
+      {slides.map((slide, index) => (
+        <div key={index}></div>
+      ))}
+    </div>
+  );
 }

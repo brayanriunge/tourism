@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <SlideShow slide={imageSlides} />
+      <SlideShow slides={imageSlides} />
     </>
   );
 }

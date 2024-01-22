@@ -62,6 +62,15 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col gap-4 text-2xl items-center">
                 <Link href={"/"}>Home</Link>
+                <Link href={"/"}>
+                  <p>Our team</p>
+                </Link>
+                <Link href={"/"}>
+                  <p>Contact Us</p>
+                </Link>
+                <Link href={"/"}>
+                  <p>About Us</p>
+                </Link>
               </div>
             </div>
           )}

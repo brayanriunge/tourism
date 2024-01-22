@@ -53,7 +53,7 @@ export default function Navbar() {
             </button>
           )}
           {/**mobile view */}
-          {isAboveMediumScreen && isMenuToggled && (
+          {!isAboveMediumScreen && isMenuToggled && (
             <div className="fixed right-0 bottom-0 h-full w-[300px] drop-shadow-xl z-40 p-5 bg-blue-200">
               <div className="flex p-4 justify-end">
                 <button onClick={() => setIsMenuToggled(!isMenuToggled)}>

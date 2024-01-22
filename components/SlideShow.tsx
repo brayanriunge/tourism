@@ -9,15 +9,15 @@ export default function SlideShow({ slides }: SlideShowProps) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 2000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [slides]);
   return (
-    <div className="min-w-xl mx-auto w-full mt-28 relative">
+    <div className="min-w-full mx-auto w-full mt-28 relative">
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`slide absolute h-60 w-full bg-cover bg-center ${
+          className={`slide absolute h-80 w-full bg-cover object-contain *:bg-center ${
             index === currentSlide ? "opacity-100" : "opacity-0"
           } transition-opacity duration-100`}
           style={{ background: `url(${slide})` }}

@@ -13,14 +13,17 @@ export default function SlideShow({ slides }: SlideShowProps) {
     return () => clearInterval(interval);
   }, [slides]);
   return (
-    <div className="min-w-full mx-auto w-full mt-28 relative">
+    <div className="max-w-full mx-auto w-full h-screen mt-24 relative">
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`slide absolute h-80 w-full bg-cover object-contain *:bg-center ${
+          className={`slide absolute h-full w-full bg-cover object-contain bg-no-repeat bg-center ${
             index === currentSlide ? "opacity-100" : "opacity-0"
           } transition-opacity duration-100`}
-          style={{ background: `url(${slide})` }}
+          style={{
+            backgroundImage: `url(${slide})`,
+            backgroundSize: "contain",
+          }}
         />
       ))}
     </div>

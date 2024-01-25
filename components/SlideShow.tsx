@@ -13,30 +13,32 @@ export default function SlideShow({ slides }: SlideShowProps) {
     return () => clearInterval(interval);
   }, [slides]);
   return (
-    <>
-      <div className="max-w-full mx-auto w-full h-screen mt-24 relative">
-        {slides.map((slide, index) => (
-          <>
-            <div
-              key={index}
-              className={`slide absolute h-full w-full bg-cover object-contain bg-no-repeat bg-center ${
-                index === currentSlide ? "opacity-100" : "opacity-0"
-              } transition-opacity duration-100`}
-              style={{
-                backgroundImage: `url(${slide})`,
-                backgroundSize: "contain",
-              }}
-            />
-          </>
-        ))}
-        <div className="text-container absolute m-10 p-10 top-0 left-0 right-0 text-center mt-10">
-          <div className=" bg-opacity-50 bg-white  items-center">
-            <h1>Africa travels</h1>
-            <p> we are ready to explore the world with you. </p>
+    <div className="max-w-full mx-auto w-full h-screen mt-24 relative">
+      {slides.map((slide, index) => (
+        <>
+          <div
+            key={index}
+            className={`slide absolute h-full w-full bg-cover object-contain bg-no-repeat bg-center ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            } transition-opacity duration-100`}
+            style={{
+              backgroundImage: `url(${slide})`,
+              backgroundSize: "cover",
+            }}
+          />
+        </>
+      ))}
+      <div className="m-10 py-10  ">
+        <div className="text-container right-0 bg-white bg-opacity-40 m-10 p-10 left-0 rounded-2xl w-1/2 absolute py-10  text-center ">
+          <div className="  items-center">
+            <h1 className="text-3xl font-bold mb-2">Africa travels</h1>
+            <p className="text-lg">
+              {" "}
+              we are ready to explore the world with you.{" "}
+            </p>
           </div>
         </div>
       </div>
-      <div>home </div>
-    </>
+    </div>
   );
 }

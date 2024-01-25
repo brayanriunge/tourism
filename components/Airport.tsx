@@ -4,7 +4,7 @@ import airport from "@/public/airport.jpeg";
 export default function Airport() {
   return (
     <section className="bg-gradient-to-r from-teal-500 to-yellow-500  ">
-      <div className="m-16 p-10  md:flex justify-between items-center gap-16 w-5/6 md:h-5/6 mt-0 mb-0">
+      <div className="m-16 p-10  md:flex justify-between items-center gap-16 w-5/6 md:h-5/6 mt-2 mb-0">
         <div className="   ">
           <h1 className="text-3xl pb-4 font-bold ">
             Airport
@@ -28,7 +28,7 @@ export default function Airport() {
           height={340}
           width={600}
           alt="airport"
-          className="rounded-xl"
+          className="rounded-xl mt-6"
         />
       </div>
     </section>

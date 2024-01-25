@@ -3,9 +3,15 @@ import airport from "@/public/airport.jpeg";
 
 export default function Airport() {
   return (
-    <section>
-      <div className="flex justify-between items-center">
-        <Image src={airport} alt="airport" className="rounded-xl" />
+    <section className="bg-gradient-to-r from-teal-500 to-blue-500 mt-0 ">
+      <div className="m-10 p-10  flex justify-between items-center gap-8 w-5/6">
+        <Image
+          src={airport}
+          height={340}
+          width={600}
+          alt="airport"
+          className="rounded-xl"
+        />
         <div className="text-lg font-bold">
           Experience seamless and stress-free travel with our exceptional
           airport transportation services that elevate your journey from

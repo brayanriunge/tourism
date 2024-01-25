@@ -4,7 +4,7 @@ import airport from "@/public/airport.jpeg";
 export default function Airport() {
   return (
     <section className="bg-gradient-to-r from-teal-500 to-blue-500  ">
-      <div className="m-10 p-10  md:flex justify-between items-center gap-16 w-5/6 md:h-5/6 mt-0 mb-0">
+      <div className="mx-auto  md:flex justify-between items-center gap-16 w-5/6 md:h-5/6 mt-32 mb-0">
         <Image
           src={airport}
           height={340}

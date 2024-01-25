@@ -1,14 +1,14 @@
 import Airport from "@/components/Airport";
+import Layout from "@/components/Layout";
 import Navbar from "@/components/Navbar";
 import SlideShow from "@/components/SlideShow";
 
 export default function Home() {
   const imageSlides = ["lions.jpeg", "giraffe.jpeg", "water.jpeg"];
   return (
-    <>
-      <Navbar />
+    <Layout>
       <SlideShow slides={imageSlides} />
       <Airport />
-    </>
+    </Layout>
   );
 }

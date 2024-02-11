@@ -15,7 +15,7 @@ export default function DestinationClass({ picture, description }: props) {
         <h1>{description}</h1>
       </div>
 
-      <Image src={picture} alt={`${picture}`} height={200} width={380} />
+      <Image src={picture} alt={`${picture}`} height={380} width={450} />
     </li>
   );
 }

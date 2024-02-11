@@ -1,7 +1,10 @@
 import { destinationType } from "@/hooks/types";
 import mara from "@/public/mara.jpg";
 import tsavo from "@/public/Tsavo.jpg";
-import amboseli from "@/public/amboseli.jpeg";
+import amboseli from "@/public/Amboseli National Park male lion.jpg";
+import MTkenya from "@/public/mount-kenyapark.jpg";
+import hells from "@/public/Hells.jpg";
+import nakuru from "@/public/nakuru-national-park.jpg";
 import DestinationClass from "./DestinationClass";
 
 const destinations: Array<destinationType> = [
@@ -16,6 +19,18 @@ const destinations: Array<destinationType> = [
   {
     picture: amboseli,
     description: "Amboseli National Park",
+  },
+  {
+    picture: MTkenya,
+    description: "Get to to the amazing Mount Kenya",
+  },
+  {
+    picture: nakuru,
+    description: "White rhinos in Nakuru will be memorable",
+  },
+  {
+    picture: hells,
+    description: "Let`s take a hike in Hells gate national Park",
   },
 ];
 

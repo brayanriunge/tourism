@@ -3,14 +3,14 @@ import airport from "@/public/airport.jpeg";
 
 export default function Airport() {
   return (
-    <section className="bg-gradient-to-r from-teal-500 to-yellow-500  ">
-      <div className="m-16 p-10  md:flex justify-between items-center gap-16 md:w-5/6 md:h-full mt-2 mb-0">
-        <div className="   ">
-          <h1 className="text-3xl pb-4 font-bold ">
+    <section className="pb-10 gap-16 md:h-full ">
+      <div className="mx-auto  md:flex justify-between items-center  md:h-5/6  w-5/6 gap-6 ">
+        <div className=" md:basis-3/5 z-10 md:mt-32  ">
+          <h1 className="text-3xl pb-4 font-bold m-5 p-5">
             Airport
             <span className="text-red-700 italic"> Transport</span>
           </h1>
-          <div className="text-lg font-bold  justify-content ">
+          <div className="text-lg font-bold  justify-content md:mb-10 ">
             Experience seamless and stress-free travel with our exceptional
             airport transportation services that elevate your journey from
             touchdown to check-in. Arrive in style and comfort with our fleet of
@@ -23,13 +23,15 @@ export default function Airport() {
             memorable part of your overall journey.
           </div>
         </div>
-        <Image
-          src={airport}
-          height={340}
-          width={600}
-          alt="airport"
-          className="rounded-xl mt-6 ml-20"
-        />
+        <div className="md:z-10 md:mt-16 md:basis-3/5">
+          <Image
+            src={airport}
+            height={340}
+            width={600}
+            alt="airport"
+            className="rounded-xl mt-6 "
+          />
+        </div>
       </div>
     </section>
   );

@@ -1,18 +1,20 @@
 import { destinationType } from "@/hooks/types";
 import mara from "@/public/mara.jpg";
+import tsavo from "@/public/Tsavo.jpg";
+import amboseli from "@/public/amboseli.jpeg";
 import DestinationClass from "./DestinationClass";
 
 const destinations: Array<destinationType> = [
   {
-    image: "@/public/mara.jpg",
+    picture: mara,
     description: "Maasai Mara",
   },
   {
-    image: "@/public/tsavo.jpg",
+    picture: tsavo,
     description: "Tsavo National Reserve",
   },
   {
-    image: "@/public/amboseli.jpeg",
+    picture: amboseli,
     description: "Amboseli National Park",
   },
 ];
@@ -24,12 +26,12 @@ export default function Destination() {
         <h1 className="text-3xl font-bold m-5 p-5">
           Destinations <span className="text-red-700 italic">FOR YOU</span>
         </h1>
-        <div className="h-[353px] mt-10 w-full">
-          <ul className="whitespace-nowrap">
+        <div className="h-[353px] mt-10 w-full overflow-x-auto overflow-y-hidden">
+          <ul className="whitespace-nowrap w-[2800px]">
             {destinations.map((item: destinationType, index) => (
               <DestinationClass
                 key={index}
-                image={item.image}
+                picture={item.picture}
                 description={item.description}
               />
             ))}

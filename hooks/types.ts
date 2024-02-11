@@ -1,4 +1,6 @@
+import { StaticImageData } from "next/image";
+
 export interface destinationType {
-  image: string;
+  picture: StaticImageData;
   description: string;
 }

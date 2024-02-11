@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type props = {
-  image: string;
+  picture: StaticImageData;
   description: string;
 };
-export default function DestinationClass({ image, description }: props) {
+export default function DestinationClass({ picture, description }: props) {
   const overLayStyles = `p-5 absolute z-30 flex h-[400px] w-[450px] 
     flex-col items-center justify-center whitespace-normal 
     bg-primary-500 text-center text-white opacity-0 transition 
@@ -15,7 +15,7 @@ export default function DestinationClass({ image, description }: props) {
         <h1>{description}</h1>
       </div>
 
-      <Image src={image} alt={`${image}`} />
+      <Image src={picture} alt={`${picture}`} height={200} width={380} />
     </li>
   );
 }

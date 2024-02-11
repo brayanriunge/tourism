@@ -1,3 +1,21 @@
+import { destinationType } from "@/hooks/types";
+import mara from "@/public/mara.jpg";
+
+const destination: Array<destinationType> = [
+  {
+    image: "@/public/mara.jpg",
+    description: "Maasai Mara",
+  },
+  {
+    image: "@/public/tsavo.jpg",
+    description: "Tsavo National Reserve",
+  },
+  {
+    image: "@/public/amboseli.jpeg",
+    description: "Amboseli National Park",
+  },
+];
+
 export default function Destination() {
   return (
     <section className="pb-10 md:h-full gap-16 ">

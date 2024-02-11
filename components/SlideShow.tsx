@@ -13,7 +13,7 @@ export default function SlideShow({ slides }: SlideShowProps) {
     return () => clearInterval(interval);
   }, [slides]);
   return (
-    <div className="max-w-full mx-auto w-full h-screen mt-24 relative">
+    <div className=" mx-auto  h-screen  relative">
       {slides.map((slide, index) => (
         <>
           <div
@@ -28,6 +28,7 @@ export default function SlideShow({ slides }: SlideShowProps) {
           />
         </>
       ))}
+
       <div className="m-10 py-10  ">
         <div className="text-container right-0 bg-white bg-opacity-40 m-10 p-10 left-0 rounded-2xl w-1/2 absolute py-10  text-center ">
           <div className="  items-center">

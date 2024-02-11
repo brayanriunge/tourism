@@ -1,7 +1,8 @@
 import { destinationType } from "@/hooks/types";
 import mara from "@/public/mara.jpg";
+import DestinationClass from "./DestinationClass";
 
-const destination: Array<destinationType> = [
+const destinations: Array<destinationType> = [
   {
     image: "@/public/mara.jpg",
     description: "Maasai Mara",
@@ -23,7 +24,17 @@ export default function Destination() {
         <h1 className="text-3xl font-bold m-5 p-5">
           Destinations <span className="text-red-700 italic">FOR YOU</span>
         </h1>
-        <div className="md:flex flex-row items-center justify-between gap-4"></div>
+        <div className="h-[353px] mt-10 w-full">
+          <ul className="whitespace-nowrap">
+            {destinations.map((item: destinationType, index) => (
+              <DestinationClass
+                key={index}
+                image={item.image}
+                description={item.description}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

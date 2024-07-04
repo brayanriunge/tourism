@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        giraffe: " url('/public/giraffe.jpeg')",
-        antelope: " url('/public/antelope.jpeg')",
-        cheetah: " url('/public/cheetah.jpeg')",
+        giraffe: " url('/giraffe.jpeg')",
+        antelope: " url('/antelope.jpeg')",
+        cheetah: " url('/cheetah.jpeg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

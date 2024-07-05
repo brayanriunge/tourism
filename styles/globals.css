@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer utilities {
-    .carousel-item {
-      @apply hidden opacity-0;
-      transition: opacity 0.6s ease, visibility 0.6s ease;
-    }
-  
-    .carousel-item-active {
-      @apply block opacity-100;
-    }
+  .carousel-item {
+    @apply hidden opacity-0;
+    transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
   }
+
+  .carousel-item-active {
+    @apply block opacity-100;
+  }
+}
